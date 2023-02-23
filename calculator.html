@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../calculator/calculator.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800;900&family=Roboto+Slab:wght@400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap" rel="stylesheet">
+    <title>calculator</title>
+</head>
+<body>
+    
+  <section class="container">
+   
+    <div class="calculator">
+        <form>
+            <div class="display">
+            <input type="text" name="display">
+            </div>
+             
+            <div>
+                <input type="button" value="AC" onclick="display.value = '' ">
+
+                <input type="button" value="DE" onclick="display.value =  display.value.toString().slice(0, -1)" > 
+
+                <input type="button" value="." onclick="display.value += '.' " >
+                <input type="button" value="/" onclick="display.value += '/' ">
+
+            </div>
+
+
+            <div>
+                <input type="button" value="7" onclick="display.value += '7' ">
+                <input type="button" value="8"  onclick="display.value += '8' ">
+                <input type="button" value="9"  onclick="display.value += '9' ">
+                <input type="button" value="*"   onclick="display.value += '*' " >
+
+            </div>
+
+            <div>
+                <input type="button" value="4"  onclick="display.value += '4' ">
+                <input type="button" value="5"  onclick="display.value += '5' ">
+                <input type="button" value="6"  onclick="display.value += '6' ">
+                <input type="button" value="-"  onclick="display.value += '-' ">
+
+            </div>
+
+            <div>
+                <input type="button" value="1"  onclick="display.value += '1' ">
+                <input type="button" value="2"  onclick="display.value += '2' "> 
+                <input type="button" value="3"  onclick="display.value += '3' ">
+                <input type="button" value="+"  onclick="display.value += '+' ">
+
+            </div>
+
+
+            
+            <div>
+                <input type="button" value="00"  onclick="display.value += '00' ">
+                <input type="button" value="0"  onclick="display.value += '0' ">
+                <input type="button" value="=" onclick="display.value = eval(display.value)"  class="equall" style="width: 145px;">
+                
+            </div>
+            
+            
+        </form>
+    </div>
+  </section>
+   
+
+  <style>
+    *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image:  radial-gradient(circle at 7.5% 24%, rgb(237, 161, 193) 0%, rgb(250, 178, 172) 25.5%, rgb(190, 228, 210) 62.3%, rgb(215, 248, 247) 93.8%);;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+.calculator{
+    background: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+    padding: 20px;
+    border-radius: 15px;
+
+}
+
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(255, 255, 255, 0.2);
+    background: transparent; 
+    font-size: 21px;
+    color: #000;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.calculator form .display{
+     display: flex;
+     justify-content: flex-end;
+     margin: 20px 0px;
+
+}
+
+.calculator form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none ;
+
+}
+
+
+@media   only screen and  (max-width: 480px){
+
+ 
+
+    .calculator form input{
+     width: 45px;
+    height: 45px;
+    font-size: 20px;
+    position: relative;
+    left: 20px;
+    
+
+    }
+}
+
+  </style>
+
+
+<script>
+    
+    window.alert("Ilove You Julie Ann <3 ");
+</script>
+
+
+    <script src="../calculator/calculator.js"></script>
+</body>
+</html>
